@@ -1,0 +1,94 @@
+{
+  "base_value_logodds": -5.203911046067075,
+  "top15_mean_abs_shap": {
+    "Count feature C5": 0.2973210915644052,
+    "Time-gap feature D1 (days)": 0.27047668890776055,
+    "Count feature C13": 0.2645530683419218,
+    "Order amount": 0.26190455387548905,
+    "Purchaser email domain": 0.2230954964343835,
+    "Card attribute 1 (masked)": 0.18617886605849088,
+    "Count feature C1": 0.18422840629702014,
+    "Count feature C14": 0.17586765490612452,
+    "Cents part of amount": 0.1604053580884919,
+    "Card attribute 2 (masked)": 0.15618798779979776,
+    "Time-gap feature D15 (days)": 0.15170450992091153,
+    "Debit / credit": 0.15112614432107638,
+    "Time-gap feature D4 (days)": 0.14716270111319438,
+    "Billing region": 0.12490837212612443,
+    "Count feature C2": 0.12057786550759958
+  },
+  "amount_effect": {
+    "<$10": {
+      "orders": 1250.0,
+      "fraud_rate": 0.1128,
+      "mean_amount_push": -0.3791085919580584
+    },
+    "$10-25": {
+      "orders": 5139.0,
+      "fraud_rate": 0.07647402218330414,
+      "mean_amount_push": -0.4083169553633823
+    },
+    "$25-50": {
+      "orders": 21041.0,
+      "fraud_rate": 0.030226700251889168,
+      "mean_amount_push": -0.28645727790756287
+    },
+    "$50-100": {
+      "orders": 23091.0,
+      "fraud_rate": 0.028062881642198258,
+      "mean_amount_push": -0.05516952640699914
+    },
+    "$100-200": {
+      "orders": 20854.0,
+      "fraud_rate": 0.027668552795626737,
+      "mean_amount_push": 0.15521833037205646
+    },
+    "$200-500": {
+      "orders": 10436.0,
+      "fraud_rate": 0.036699885013415104,
+      "mean_amount_push": 0.5349759945357294
+    },
+    "$500-1k": {
+      "orders": 2363.0,
+      "fraud_rate": 0.07405840033855268,
+      "mean_amount_push": 0.537035550304971
+    },
+    "$1k+": {
+      "orders": 1256.0,
+      "fraud_rate": 0.03264331210191083,
+      "mean_amount_push": 0.056913832385003145
+    }
+  },
+  "reason_codes_top1": {
+    "step_up": {
+      "Count feature C14": 0.2509620670698186,
+      "Order amount": 0.16286421110500274,
+      "Time-gap feature D1 (days)": 0.12479384277075316,
+      "Debit / credit": 0.09125893347993402,
+      "Count feature C1": 0.07971412864211105,
+      "Count feature C13": 0.04906542056074766
+    },
+    "decline": {
+      "Count feature C1": 0.7805755395683454,
+      "Count feature C14": 0.14268585131894485,
+      "Count feature C13": 0.03597122302158273,
+      "Order amount": 0.025179856115107913,
+      "Count feature C6": 0.005995203836930456,
+      "Recipient email domain": 0.0035971223021582736
+    },
+    "review": {
+      "Order amount": 0.6098191214470284,
+      "Count feature C14": 0.13695090439276486,
+      "Debit / credit": 0.06632213608957795,
+      "Time-gap feature D1 (days)": 0.05426356589147287,
+      "Count feature C1": 0.020671834625323,
+      "Purchaser email domain": 0.019810508182601206
+    }
+  },
+  "example_reasons": {
+    "Declined (fraud)": "Count feature C1 (203); Count feature C11 (155); Count feature C4 (51)",
+    "Sent to review (high value)": "Count feature C14 (0); Count feature C13 (0); Order amount ($5,277.95)",
+    "Stepped up (genuine customer)": "Order amount ($422.50); Card attribute 2 (masked) (481); Count feature C13 (1)",
+    "Approved, but was fraud (missed)": "Debit / credit (credit); Purchaser email domain (gmail.com); Count feature C13 (1)"
+  }
+}
