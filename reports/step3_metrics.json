@@ -1,0 +1,98 @@
+{
+  "split_days": {
+    "train": [
+      0,
+      101
+    ],
+    "validation": [
+      102,
+      121
+    ],
+    "gap": [
+      122,
+      151
+    ],
+    "test": [
+      152,
+      181
+    ]
+  },
+  "n_features": 42,
+  "best_iteration": 1072,
+  "metrics": {
+    "validation": {
+      "fraud rate (= PR-AUC of random guessing)": 0.04352053259508273,
+      "PR-AUC": 0.6273196420695448,
+      "ROC-AUC": 0.9279764862205756,
+      "PR-AUC lift vs random": 14.41433743254383
+    },
+    "test": {
+      "fraud rate (= PR-AUC of random guessing)": 0.03504623668500527,
+      "PR-AUC": 0.4984672221532695,
+      "ROC-AUC": 0.8922901462264299,
+      "PR-AUC lift vs random": 14.223131191901741
+    }
+  },
+  "capture_test": {
+    "0.5%": {
+      "orders flagged": 428.0,
+      "precision": 0.927570093457944,
+      "frauds caught (recall)": 0.1325985303941216,
+      "fraud $ caught": 0.06848884224081425,
+      "genuine customers flagged": 0.000376049298850017
+    },
+    "1.0%": {
+      "orders flagged": 855.0,
+      "precision": 0.8526315789473684,
+      "frauds caught (recall)": 0.24348697394789579,
+      "fraud $ caught": 0.12677934127274787,
+      "genuine customers flagged": 0.0015284584404871657
+    },
+    "2.0%": {
+      "orders flagged": 1709.0,
+      "precision": 0.6775892334698654,
+      "frauds caught (recall)": 0.3867735470941884,
+      "fraud $ caught": 0.24894697302686397,
+      "genuine customers flagged": 0.006683973021495464
+    },
+    "3.0%": {
+      "orders flagged": 2563.0,
+      "precision": 0.5286773312524385,
+      "frauds caught (recall)": 0.45257181028724114,
+      "fraud $ caught": 0.3172446561086889,
+      "genuine customers flagged": 0.014653792032607114
+    },
+    "5.0%": {
+      "orders flagged": 4272.0,
+      "precision": 0.38295880149812733,
+      "frauds caught (recall)": 0.5464261857047428,
+      "fraud $ caught": 0.4577559835442269,
+      "genuine customers flagged": 0.031976321024794994
+    },
+    "10.0%": {
+      "orders flagged": 8543.0,
+      "precision": 0.23972843263490576,
+      "frauds caught (recall)": 0.6840347361389446,
+      "fraud $ caught": 0.6583992146688652,
+      "genuine customers flagged": 0.07878839342035034
+    }
+  },
+  "review_queue_test": {
+    "precision_of_top100_per_day": 0.48133333333333334,
+    "avg_frauds_in_queue_per_day": 48.13333333333333,
+    "avg_frauds_per_day": 99.8,
+    "share_of_daily_fraud_in_queue": 0.48229792919171677
+  },
+  "top10_features": {
+    "C1": 0.0834,
+    "C13": 0.0622,
+    "card1": 0.0595,
+    "C4": 0.0593,
+    "card2": 0.0587,
+    "C14": 0.0572,
+    "addr1": 0.0544,
+    "TransactionAmt": 0.049,
+    "D15": 0.0419,
+    "D1": 0.0378
+  }
+}
