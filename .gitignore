@@ -24,3 +24,6 @@ venv/
 
 # Model outputs (predictions, saved models)
 artifacts/
+
+# Private notes (not for GitHub)
+interview_prep.md
