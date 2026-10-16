@@ -2,7 +2,7 @@
 
 **Company:** NovaCart (fictional online retailer, used as the case study for this project)
 **Prepared by:** Risk & Analytics
-**Date:** October 2026
+**Date:** May 2026
 **Classification:** Portfolio project. NovaCart is fictional; its transactions are the real IEEE-CIS dataset, and industry figures are sourced below.
 
 > **Executive summary.** NovaCart's fraud ratio is 3.5%, more than double Visa's 1.5% limit, and doing nothing costs about **$556k–$619k a month**. A machine-learning risk score plus a cost-optimised decision policy cuts the total cost of fraud by **60% (about $334k a month)** on an unseen test month, brings the fraud ratio to **1.27%** (under Visa's limit, no fines), and still approves **91% of genuine customers instantly**. The 0.5% target is reachable only at the price of extra checks for half of all genuine customers, so we recommend adopting the policy now and reaching 0.5% through better data. See **Section 8**.
