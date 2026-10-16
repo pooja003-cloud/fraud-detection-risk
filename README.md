@@ -71,18 +71,9 @@ Every flagged order gets **SHAP reason codes**. Declines are driven mainly by ex
 | **Reviews per day** | Operational capacity |
 | **PR-AUC** | Model quality on imbalanced data: **0.50 on the test month, 14× better than random** |
 
-## Project steps
+## Methodology
 
-| Step | Notebook | What it does |
-|---|---|---|
-| 1 | [`docs/business_brief.md`](docs/business_brief.md) | Risk assessment, objectives, cost assumptions, results and recommendation |
-| 2 | [`02_eda_cost_of_doing_nothing`](notebooks/02_eda_cost_of_doing_nothing.ipynb) | Fraud rate, where fraud concentrates, the $619k/month baseline |
-| 3 | [`03_baseline_lightgbm`](notebooks/03_baseline_lightgbm.ipynb) | Time-based split (train → validation → 30-day gap → test), LightGBM, PR-AUC |
-| 4 | [`04_cost_optimised_policy`](notebooks/04_cost_optimised_policy.ipynb) | Calibration, cost model, policies A–E, review cap, trade-off curve, sensitivity |
-| 5 | [`05_explainability_shap`](notebooks/05_explainability_shap.ipynb) | SHAP drivers, card-testing check, order-level explanations, reason codes |
-| 6 | *(planned)* | Interactive what-if dashboard |
-
-**Methodology guard-rails:** split by time, never at random · no oversampling or class weights (keeps probabilities honest) · every threshold and setting chosen on validation, test used once · review cap enforced day by day · Visa fines charged only in months above the limit.
+Split by time, never at random · no oversampling or class weights (keeps probabilities honest) · every threshold and setting chosen on validation, test used once · review cap enforced day by day · Visa fines charged only in months above the limit.
 
 ## Project structure
 
