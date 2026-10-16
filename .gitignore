@@ -1,0 +1,23 @@
+# Data (never commit the Kaggle files)
+data/*
+!data/README.md
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Models and large outputs
+*.pkl
+*.joblib
+*.parquet
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/
