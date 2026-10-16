@@ -1,4 +1,4 @@
-# 💳 Chargeback Reduction: A Cost-Optimised Fraud Risk Framework
+# Chargeback Reduction: A Cost-Optimised Fraud Risk Framework
 
 > An end-to-end fraud risk project that links a **corporate risk assessment** to a **machine-learning model**, and measures success in **dollars saved and customer friction**, not accuracy.
 
@@ -40,7 +40,7 @@ Above the network limit, NovaCart pays fines and risks losing its payment proces
 | A. Textbook thresholds (0.30 / 0.75) | $405k | 27% | 2.17% | 98.8% | 64 |
 | B. Cost-optimised thresholds | $225k | 60% | 1.08% | 84.6% | 20 |
 | C. Expected-cost (no friction limit) | $210k | 62% | 0.85% | 77.7% | 70 |
-| **D. Expected-cost within limits ⭐** | **$222k** | **60%** | **1.27%** | **91.3%** | **58** |
+| **D. Expected-cost within limits (recommended)** | **$222k** | **60%** | **1.27%** | **91.3%** | **58** |
 | E. Expected-cost forced to 0.5% | $257k | 54% | 0.45% | 50.6% | 100 |
 
 **Key findings**
@@ -80,7 +80,7 @@ Split by time, never at random · no oversampling or class weights (keeps probab
 ```
 fraud-detection-risk/
 ├── docs/business_brief.md   # Risk assessment, objectives, results, recommendation
-├── notebooks/               # Steps 2-5 (run on Kaggle), with outputs
+├── notebooks/               # Steps 2-5 (run on Kaggle), with outputs; Step 1 is docs/business_brief.md
 ├── src/policy.py            # Reusable cost model, policies and evaluation
 ├── tests/test_policy.py     # Checks src/ reproduces the Step 4 results
 ├── app/                     # Test-month scores + assumptions (input for the planned dashboard)
@@ -88,6 +88,8 @@ fraud-detection-risk/
 ├── data/                    # Local data only (git-ignored), see data/README.md
 └── requirements.txt
 ```
+
+Notebooks are numbered by project step, so they start at `02_`. **Step 1 is the business risk assessment** in [`docs/business_brief.md`](docs/business_brief.md).
 
 ## How to run
 
