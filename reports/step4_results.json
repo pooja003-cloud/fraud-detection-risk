@@ -1,0 +1,182 @@
+{
+  "calibration": {
+    "brier_raw": 0.02348066861828386,
+    "brier_calibrated": 0.023642012034221407
+  },
+  "policy_B_cutoffs": {
+    "step_up_from": 0.033766319134166646,
+    "decline_or_review_from": 0.9885660334461903
+  },
+  "policy_D_friction_penalty": 4.0,
+  "policy_E_weight": 3.0,
+  "results_test": {
+    "0. Do nothing": {
+      "total_cost": 556237.576,
+      "fines": 23952.0,
+      "fraud_ratio": 0.03504623668500527,
+      "fraud_$_stopped": 0.0,
+      "approve_%": 1.0,
+      "step_up_%": 0.0,
+      "decline_%": 0.0,
+      "review_%": 0.0,
+      "genuine_friction_%": 0.0,
+      "genuine_instant_approval_%": 1.0,
+      "genuine_lost_%": 0.0,
+      "reviews_per_day_avg": 0.0,
+      "reviews_per_day_max": 0.0,
+      "cost_per_30_days": 556237.576,
+      "saving_per_30_days": 0.0,
+      "saving_%": 0.0
+    },
+    "A. Naive thresholds (0.30 / 0.75)": {
+      "total_cost": 405208.6284749999,
+      "fines": 14592.0,
+      "fraud_ratio": 0.021671214176110697,
+      "fraud_$_stopped": 0.26683682512704254,
+      "approve_%": 0.9728783799602013,
+      "step_up_%": 0.015498068594170666,
+      "decline_%": 0.0,
+      "review_%": 0.011623551445627999,
+      "genuine_friction_%": 0.012336843126789267,
+      "genuine_instant_approval_%": 0.9876631568732107,
+      "genuine_lost_%": 0.0011287544276772285,
+      "reviews_per_day_avg": 33.1,
+      "reviews_per_day_max": 64.0,
+      "cost_per_30_days": 405208.6284749999,
+      "saving_per_30_days": 151028.94752500008,
+      "saving_%": 0.27151877909988603
+    },
+    "B. Optimised thresholds": {
+      "total_cost": 224737.66442000004,
+      "fines": 0.0,
+      "fraud_ratio": 0.01083243662189812,
+      "fraud_$_stopped": 0.6979008753355029,
+      "approve_%": 0.8244293573686059,
+      "step_up_%": 0.17409575090717547,
+      "decline_%": 0.0,
+      "review_%": 0.0014748917242186584,
+      "genuine_friction_%": 0.15357368140132951,
+      "genuine_instant_approval_%": 0.8464263185986705,
+      "genuine_lost_%": 0.015354942015624241,
+      "reviews_per_day_avg": 4.2,
+      "reviews_per_day_max": 20.0,
+      "cost_per_30_days": 224737.66442000004,
+      "saving_per_30_days": 331499.91157999996,
+      "saving_%": 0.5959682083398119
+    },
+    "C. Expected-cost policy": {
+      "total_cost": 210469.06893,
+      "fines": 0.0,
+      "fraud_ratio": 0.008459090290818157,
+      "fraud_$_stopped": 0.7583710082925426,
+      "approve_%": 0.7561512349291818,
+      "step_up_%": 0.21812009832611495,
+      "decline_%": 0.00976237855554255,
+      "review_%": 0.015966288189160717,
+      "genuine_friction_%": 0.22257266242903587,
+      "genuine_instant_approval_%": 0.7774273375709642,
+      "genuine_lost_%": 0.022868043087971277,
+      "reviews_per_day_avg": 45.46666666666667,
+      "reviews_per_day_max": 70.0,
+      "cost_per_30_days": 210469.06893,
+      "saving_per_30_days": 345768.50707,
+      "saving_%": 0.6216201889064754
+    },
+    "D. Expected-cost within limits": {
+      "total_cost": 221985.23471,
+      "fines": 0.0,
+      "fraud_ratio": 0.012661931742611656,
+      "fraud_$_stopped": 0.6903853907943531,
+      "approve_%": 0.8914784033711811,
+      "step_up_%": 0.08516914432869016,
+      "decline_%": 0.00976237855554255,
+      "review_%": 0.013590073744586212,
+      "genuine_friction_%": 0.0871827842204862,
+      "genuine_instant_approval_%": 0.9128172157795138,
+      "genuine_lost_%": 0.0094449027124072,
+      "reviews_per_day_avg": 38.7,
+      "reviews_per_day_max": 58.0,
+      "cost_per_30_days": 221985.23471,
+      "saving_per_30_days": 334252.34129,
+      "saving_%": 0.6009165071041515
+    },
+    "E. Expected-cost + 0.5% target": {
+      "total_cost": 256871.31326000002,
+      "fines": 0.0,
+      "fraud_ratio": 0.004541300634611126,
+      "fraud_$_stopped": 0.8712021626844345,
+      "approve_%": 0.49040149830270396,
+      "step_up_%": 0.46415779000351165,
+      "decline_%": 0.014678684302938078,
+      "review_%": 0.030762027390846308,
+      "genuine_friction_%": 0.49383764374787714,
+      "genuine_instant_approval_%": 0.5061623562521229,
+      "genuine_lost_%": 0.05125188024649425,
+      "reviews_per_day_avg": 87.6,
+      "reviews_per_day_max": 100.0,
+      "cost_per_30_days": 256871.31326000002,
+      "saving_per_30_days": 299366.26274,
+      "saving_%": 0.5381985605733332
+    }
+  },
+  "sensitivity_policy_D": {
+    "Base case": {
+      "cost_per_30_days": 221985.23471,
+      "saving_%": 0.6009165071041516,
+      "fraud_ratio": 0.012661931742611656,
+      "genuine_instant_approval_%": 0.9128172157795138
+    },
+    "Step-up abandonment 20% (vs 10%)": {
+      "cost_per_30_days": 232826.321465,
+      "saving_%": 0.5814264776225762,
+      "fraud_ratio": 0.01180737692930199,
+      "genuine_instant_approval_%": 0.9008564219515746
+    },
+    "Step-up abandonment 5%": {
+      "cost_per_30_days": 198224.59595500003,
+      "saving_%": 0.643633216259018,
+      "fraud_ratio": 0.012971286982649356,
+      "genuine_instant_approval_%": 0.9124411664806638
+    },
+    "Chargeback fee $50 (vs $25)": {
+      "cost_per_30_days": 251571.87463999997,
+      "saving_%": 0.6013677273849549,
+      "fraud_ratio": 0.012769877451247068,
+      "genuine_instant_approval_%": 0.9161288757339027
+    },
+    "Margin 15% (vs 30%)": {
+      "cost_per_30_days": 197896.432755,
+      "saving_%": 0.6442231857507592,
+      "fraud_ratio": 0.012962219135787533,
+      "genuine_instant_approval_%": 0.9114585860546364
+    },
+    "Customer churn 45% (vs 30%)": {
+      "cost_per_30_days": 223582.44192,
+      "saving_%": 0.5980450592212418,
+      "fraud_ratio": 0.012740116255525222,
+      "genuine_instant_approval_%": 0.9130840894754719
+    },
+    "Review capacity 50/day (vs 100)": {
+      "cost_per_30_days": 221867.17176000006,
+      "saving_%": 0.601128759844876,
+      "fraud_ratio": 0.012662069532560213,
+      "genuine_instant_approval_%": 0.912865738269688
+    }
+  },
+  "assumptions": {
+    "chargeback_fee": 25.0,
+    "vamp_fine": 8.0,
+    "vamp_limit": 0.015,
+    "target_ratio": 0.005,
+    "margin": 0.3,
+    "churn_prob": 0.3,
+    "future_margin": 80.0,
+    "sms_cost": 0.05,
+    "stepup_abandon": 0.1,
+    "stepup_bypass": 0.1,
+    "review_cost": 5.0,
+    "analyst_miss": 0.1,
+    "analyst_wrong_decline": 0.05,
+    "review_capacity_per_day": 100
+  }
+}

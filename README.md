@@ -49,7 +49,7 @@ The data is **not stored in this repo**. See [`data/README.md`](data/README.md).
 - [x] **Step 1:** Business risk assessment and repo setup
 - [ ] **Step 2:** Exploratory data analysis and "cost of doing nothing" baseline
 - [x] **Step 3:** Baseline LightGBM model (time-based split, PR-AUC) ([notebook](notebooks/03_baseline_lightgbm.ipynb)): test PR-AUC 0.50, 14× better than random
-- [ ] **Step 4:** Financial cost framework and three-tier threshold optimisation
+- [x] **Step 4:** Financial cost framework and three-tier threshold optimisation ([notebook](notebooks/04_cost_optimised_policy.ipynb)): recommended policy cuts the cost of fraud by 60% (about $334k/month), fraud ratio 3.5% → 1.27%, 91% instant approval
 - [ ] **Step 5:** Explainability (SHAP)
 - [ ] **Step 6:** Streamlit financial impact dashboard
 - [ ] **Step 7:** Results write-up

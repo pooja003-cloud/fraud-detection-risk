@@ -1,0 +1,16 @@
+{
+  "chargeback_fee": 25.0,
+  "vamp_fine": 8.0,
+  "vamp_limit": 0.015,
+  "target_ratio": 0.005,
+  "margin": 0.3,
+  "churn_prob": 0.3,
+  "future_margin": 80.0,
+  "sms_cost": 0.05,
+  "stepup_abandon": 0.1,
+  "stepup_bypass": 0.1,
+  "review_cost": 5.0,
+  "analyst_miss": 0.1,
+  "analyst_wrong_decline": 0.05,
+  "review_capacity_per_day": 100
+}
