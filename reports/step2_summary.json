@@ -1,0 +1,29 @@
+{
+  "n_transactions": 590540,
+  "n_fraud": 20663,
+  "n_days": 182,
+  "median_daily_transactions": 3049.5,
+  "median_daily_frauds": 112.5,
+  "avg_genuine_order_$": 134.51166457849672,
+  "avg_fraud_order_$": 149.24477858974976,
+  "total_cost_$": 3765723.8599999994,
+  "avg_monthly_cost_$": 618920.5194999999,
+  "cost_pct_of_revenue": 0.04722565220310086,
+  "fraud_ratio_count": 0.03499000914417313,
+  "fraud_ratio_value": 0.03867426030720167,
+  "months_over_vamp_limit": 7,
+  "months_total": 7,
+  "assumptions": {
+    "chargeback_fee": 25.0,
+    "vamp_fine": 8.0,
+    "vamp_limit": 0.015,
+    "target_ratio": 0.005,
+    "review_capacity_per_day": 100
+  },
+  "split": {
+    "test_days": 30,
+    "gap_days": 30,
+    "gap_start_day": 122,
+    "test_start_day": 152
+  }
+}
